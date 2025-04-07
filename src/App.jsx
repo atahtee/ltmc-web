@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
       <nav style={{marginBottom: '2rem'}}>
         <Link to="/" className="nav-btn">🏠 Home</Link>
+        
         {/* <Link to="/terms-of-service" className="nav-btn">📜 Terms of Service</Link>
         <Link to="/privacy-policy" className="nav-btn">🔒 Privacy</Link> */}
 
