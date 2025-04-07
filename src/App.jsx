@@ -3,13 +3,15 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <nav style={{marginBottom: '2rem'}}>
         <Link to="/" className="nav-btn">🏠 Home</Link>
-        
+
         {/* <Link to="/terms-of-service" className="nav-btn">📜 Terms of Service</Link>
         <Link to="/privacy-policy" className="nav-btn">🔒 Privacy</Link> */}
 
@@ -34,6 +36,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
+    <Analytics />
+    </>
   );
 }
 
