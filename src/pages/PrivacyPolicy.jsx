@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
       </div>
 
       <p className="mb-10 text-center text-gray-600 text-sm border-b border-purple-100 pb-6">
-        At <span className="text-purple-600 font-medium">Letter to My Child</span>, we care deeply about your privacy.
+        At <span className="text-purple-600 font-medium">Cherish - Letter To My Child</span>, we care deeply about your privacy.
       </p>
 
       <div className="space-y-8">
@@ -83,7 +83,7 @@ const PrivacyPolicy = () => {
       <div className="mt-16 pt-6 border-t border-purple-100 text-center">
         <p className="text-xs text-purple-300 mb-2">Questions about your privacy?</p>
         <a href="mailto:privacy@letterchild.com" className="text-xs font-medium text-purple-500 hover:text-purple-600 transition-colors">
-          privacy@letterchild.com
+          hello@lettertomychild.site
         </a>
         <div className="mt-6 text-purple-200 text-xs">
           <span className="opacity-75">•</span>
