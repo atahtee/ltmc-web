@@ -81,14 +81,14 @@ const TermsOfService = () => {
           </h2>
           <p className="text-center text-gray-600 text-sm">
             Questions? Reach out anytime:<br />
-            <span className="font-medium text-purple-500 mt-1 block">hello@letterchild.com</span>
+            <span className="font-medium text-purple-500 mt-1 block">hello@letterchild.site</span>
           </p>
         </section>
       </div>
 
-      <div className="mt-10 text-center text-sm text-purple-400">
+      {/* <div className="mt-10 text-center text-sm text-purple-400">
         Made with 💜 by Letter to My Child
-      </div>
+      </div> */}
     </div>
   );
 };
