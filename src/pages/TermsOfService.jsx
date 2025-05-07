@@ -18,12 +18,41 @@ const TermsOfService = () => {
 
       <div className="space-y-6">
         {[
-          { icon: '🎮', title: 'Using the App', text: 'Write heartfelt letters to your children and schedule them for future delivery. For personal use only—no commercial or shady stuff, please!' },
-          { icon: '🔑', title: 'Your Account', text: 'Keep your login details private. No sharing accounts or pretending to be someone else.' },
-          { icon: '✏️', title: 'Your Letters, Your Words', text: 'Everything you write is 100% yours. We only store it securely and deliver when scheduled.' },
-          { icon: '🚫', title: "What's Not Allowed", text: 'Please don’t use our app to:', list: ['Post harmful or offensive content', 'Violate anyone’s privacy', 'Mess with our systems'] },
-          { icon: '⚠️', title: 'If Rules Are Broken', text: 'We may suspend accounts that violate these terms to keep our community happy.' },
-          { icon: '🔄', title: 'Changes to Terms', text: 'We’ll notify you if we update these terms. Continued use means you accept the changes.' },
+          {
+            icon: '🎮',
+            title: 'Using the App',
+            text: 'Write heartfelt letters to your children and schedule them for future delivery. For personal use only—no commercial or shady stuff, please!',
+          },
+          {
+            icon: '🔑',
+            title: 'Your Account',
+            text: 'Keep your login details private. No sharing accounts or pretending to be someone else.',
+          },
+          {
+            icon: '✏️',
+            title: 'Your Letters, Your Words',
+            text: 'Everything you write is 100% yours. We only store it securely and deliver when scheduled.',
+          },
+          {
+            icon: '🚫',
+            title: "What's Not Allowed",
+            text: 'Please don’t use our app to:',
+            list: [
+              'Post harmful or offensive content',
+              'Violate anyone’s privacy',
+              'Mess with our systems',
+            ],
+          },
+          {
+            icon: '⚠️',
+            title: 'If Rules Are Broken',
+            text: 'We may suspend accounts that violate these terms to keep our community happy.',
+          },
+          {
+            icon: '🔄',
+            title: 'Changes to Terms',
+            text: 'We’ll notify you if we update these terms. Continued use means you accept the changes.',
+          },
         ].map(({ icon, title, text, list }) => (
           <section key={title} className="bg-gray-900 p-5 rounded-lg shadow-sm">
             <h2 className="flex items-center text-lg font-medium text-blue-400 mb-2">
@@ -32,7 +61,9 @@ const TermsOfService = () => {
             <p className="text-blue-400 text-sm mb-2">{text}</p>
             {list && (
               <div className="pl-5 text-sm text-blue-400 space-y-1">
-                {list.map((item, idx) => <p key={idx}>• {item}</p>)}
+                {list.map((item, idx) => (
+                  <p key={idx}>• {item}</p>
+                ))}
               </div>
             )}
           </section>
